@@ -194,8 +194,8 @@ void native_onCanvasDraw(JNIEnv *env, jobject obj, jobject canvas, int screenWid
     if (!bInitDone)
         return;
 
-    auto Screen_SetResolution = (void (*)(void *, int, int, bool)) (Methods["Screen::SetResolution"]);
-    Screen_SetResolution(0, screenWidth, screenHeight, true);
+    auto Screen_SetResolution = (void (*)(int, int, bool)) (Methods["Screen::SetResolution"]);
+    Screen_SetResolution(screenWidth, screenHeight, true);
 
     void *BaseWorld_Instance = 0;
     Il2CppGetStaticFieldValue("Assembly-CSharp.dll", "GameEngine", "BaseWorld", "Instance", &BaseWorld_Instance);

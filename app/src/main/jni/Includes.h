@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <stdio.h>
 #include <string>
@@ -38,3 +39,4 @@
 #define LOGW(...)
 #define LOGE(...)
 #endif
+#include <limits>
