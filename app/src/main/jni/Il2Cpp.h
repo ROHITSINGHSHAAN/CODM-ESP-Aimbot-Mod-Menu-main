@@ -65,7 +65,7 @@ uintptr_t Il2CppBase();
 
 #endif //ML_IL2CPP_H
 
-// bottom of Il2Cpp.h, after the namespace closes
+// aliases used by CODM.h
 #define Il2CppAttach              Il2Cpp::Attach
 #define Il2CppGetMethodOffset     Il2Cpp::GetMethodOffset
 #define Il2CppGetFieldOffset      Il2Cpp::GetFieldOffset

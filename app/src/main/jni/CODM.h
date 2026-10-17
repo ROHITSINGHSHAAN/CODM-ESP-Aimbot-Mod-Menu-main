@@ -376,7 +376,7 @@ void *Main_Thread(void *) {
             }
         }
         auto td = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count() - t1;
-        std::this_thread::sleep_for(std::chrono::milliseconds(std::max(std::min(0LL, SLEEP_TIME - td), SLEEP_TIME)));
+        std::this_thread::sleep_for(std::chrono::milliseconds(std::max(0LL, SLEEP_TIME - td)));
     }
     return 0;
 }

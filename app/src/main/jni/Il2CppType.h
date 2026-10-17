@@ -341,7 +341,7 @@ struct Il2CppVector3 {
     }
 
     Il2CppVector3 operator-(Il2CppVector3 b) {
-        Il2CppVector3 v = {x - b.x, y - b.y, y - b.y};
+        Il2CppVector3 v = {x - b.x, y - b.y, z - b.z};
         return v;
     }
 };
