@@ -66,7 +66,7 @@ uintptr_t Il2CppBase();
 #endif //ML_IL2CPP_H
 
 // bottom of Il2Cpp.h, after the namespace closes
-using Il2Cpp::Attach;
-using Il2Cpp::GetStaticFieldValue;
-using Il2Cpp::GetFieldOffset;
-using Il2Cpp::GetMethodOffset;
+#define Il2CppAttach              Il2Cpp::Attach
+#define Il2CppGetMethodOffset     Il2Cpp::GetMethodOffset
+#define Il2CppGetFieldOffset      Il2Cpp::GetFieldOffset
+#define Il2CppGetStaticFieldValue Il2Cpp::GetStaticFieldValue
