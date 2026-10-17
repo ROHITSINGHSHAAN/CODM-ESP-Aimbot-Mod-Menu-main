@@ -21,6 +21,7 @@ using namespace std;
 
 #include "Il2CppType.h"
 
+
 namespace Il2Cpp {
     int Attach(const char *libname = "libil2cpp.so");
 
@@ -63,3 +64,9 @@ using Dictionary = Il2CppDictionary<K, V>;
 uintptr_t Il2CppBase();
 
 #endif //ML_IL2CPP_H
+
+// bottom of Il2Cpp.h, after the namespace closes
+using Il2Cpp::Attach;
+using Il2Cpp::GetStaticFieldValue;
+using Il2Cpp::GetFieldOffset;
+using Il2Cpp::GetMethodOffset;
